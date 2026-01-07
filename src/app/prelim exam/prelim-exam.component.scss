@@ -22,3 +22,34 @@ section {
   justify-content: center;
   min-height: 80px;
 }
+@media (max-width: 920px) {
+  .grid-container {
+    grid-template-columns: repeat(8, 1fr);
+  }
+
+  .grid-item {
+    background-color: #4a6fa5; /* muted blue */
+    color: #f1f5f9;
+  }
+}
+@media (max-width: 756px) {
+  .grid-container {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .grid-item {
+    background-color: #5f8f6e; /* muted green */
+    color: #f0fff4;
+  }
+}
+@media (max-width: 460px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-item {
+    background-color: #b55454; /* muted red */
+    color: #fff5f5;
+  }
+}
+
